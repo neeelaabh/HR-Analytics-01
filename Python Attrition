@@ -1,0 +1,28 @@
+import pandas as pd
+
+# Load your dataset (replace 'your_dataset.csv' with the actual file name)
+df = pd.read_csv('your_dataset.csv')
+
+# Assuming 'join_date' and 'leave_date' are columns in your dataset
+# Convert join_date and leave_date to datetime objects
+df['join_date'] = pd.to_datetime(df['join_date'])
+df['leave_date'] = pd.to_datetime(df['leave_date'])
+
+# Calculate headcount
+headcount = len(df)
+
+# Calculate attrition rate
+# Assuming attrition rate is the proportion of employees who left during a certain period
+# For example, if you want to calculate attrition rate for the past year:
+current_date = pd.to_datetime('today')
+attrition_period_start = current_date - pd.DateOffset(years=1)
+
+# Filter employees who left during the specified period
+left_employees = df[df['leave_date'] >= attrition_period_start]
+
+# Calculate attrition rate
+attrition_rate = len(left_employees) / headcount
+
+# Display results
+print("Headcount:", headcount)
+print("Attrition Rate (past year):", attrition_rate)
