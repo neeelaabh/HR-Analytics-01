@@ -1,0 +1,31 @@
+# HR Analytics Project
+
+## Overview
+This project aims to analyze HR data to gain insights into employee attrition and headcount trends.
+
+## Data
+- The HR dataset used for analysis is stored in the `Data` folder.
+- The dataset contains information about employee demographics, job details, join dates, and leave dates.
+
+## Code
+- The `Code` folder contains Python scripts and notebooks used for data preprocessing, analysis, and visualization.
+- `calculate_attrition_headcount.py`: Python script to calculate attrition rate and headcount.
+- `data_preprocessing.ipynb`: Jupyter notebook for data preprocessing steps.
+- `visualization.ipynb`: Jupyter notebook for data visualization.
+
+## Results
+- Attrition Rate (past year): X%
+- Headcount: Y
+
+## How to Use
+1. Clone the repository to your local machine.
+2. Install the required dependencies (e.g., pandas, matplotlib).
+3. Run the Python scripts or notebooks to analyze the HR data.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
+
+## Author
+[Your Name]
+
+Feel free to contact me at [your.email@example.com] for any questions or feedback.
